@@ -73,13 +73,13 @@ nav a {
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: var(--light-grey);
+  background-color: var(--dark-green);
   color: var(--text-color-dark);
 }
 
 /* Add a color to the active/current link */
 nav a.active {
-  background-color: var(--light-black);
+  background-color: var(--dark-green);
   color: var(--black);
 }
 
@@ -91,18 +91,23 @@ nav a.active {
   background: var(--dark-green);
   z-index: 1;
   position: relative;
-  height: 50px;
+  height: 60px;
   text-align: center;
-  line-height: 50px;
+  line-height: 60px;
   vertical-align: middle;
-  width: 50px;
-  margin-top: -50px;
+  width: 60px;
+  margin-top: -90px;
   font-size: 30px;
   color: #fff;
 }
 
 .button:hover {
   cursor: pointer;
+}
+
+/* style for menu icons */
+.menu-icon {
+  height: 35px;
 }
 
 /* ---------- page styling ---------- */
