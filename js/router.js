@@ -3,9 +3,10 @@
  * "path": "id of page in DOM"
  */
 const _routes = {
-  "#/": "home",
-  "#/about": "about",
-  "#/clients": "clients"
+  "#/": "tasks",
+  "#/stats": "stats",
+  "#/tips": "tips",
+  "#/profile": "profile",
 };
 const _pages = document.querySelectorAll(".page");
 const _basePath = location.pathname.replace("index.html", ""); // remove index.html from path
