@@ -48,39 +48,6 @@ img {
   height: auto;
 }
 
-/* ---------- topbar styling ---------- */
-.topbar {
-  background-color: var(--black);
-  color: var(--text-color-light);
-  padding: 13.5px;
-  text-transform: uppercase;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-.topbar h2 {
-  margin: 0;
-  font-weight: 400;
-}
-
-.topbar a {
-  text-decoration: none;
-  color: var(--text-color-light);
-  position: absolute;
-  top: 20px;
-}
-
-.topbar a.left {
-  left: 20px;
-}
-
-.topbar a.right {
-  right: 20px;
-}
-
 /* ---------- nav styling ---------- */
 nav {
   background-color: var(--black);
@@ -96,9 +63,9 @@ nav a {
   display: inline-block;
   color: var(--text-color-light);
   text-align: center;
-  padding: 1.2em 1.3em;
+  padding: 1.3em;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.7em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -113,6 +80,25 @@ nav a:hover {
 nav a.active {
   background-color: var(--light-black);
   color: var(--black);
+}
+
+/* Add button */
+
+.button {
+  border-radius: 50px;
+  background: #06d6a0;
+  z-index: 1;
+  position: relative;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  width: 30px;
+  margin-top: -50px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 /* ---------- page styling ---------- */
