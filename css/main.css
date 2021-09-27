@@ -24,6 +24,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 350px;
 }
 
 h1 {
@@ -57,7 +58,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 9999;
-  min-width: 350px;
 }
 
 /* Style the links inside the navigation bar */
