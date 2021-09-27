@@ -1,5 +1,6 @@
 /* ---------- root variables ---------- */
 :root {
+  --dark-green: #00c49a;
   --black: #242423;
   --black-opacity: rgba(38, 76, 89, 0.2);
   --light-black: rgb(172, 198, 201);
@@ -87,7 +88,7 @@ nav a.active {
 .button {
   display: inline-block;
   border-radius: 50px;
-  background: #06d6a0;
+  background: var(--dark-green);
   z-index: 1;
   position: relative;
   height: 50px;
