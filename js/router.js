@@ -7,6 +7,10 @@ const _routes = {
   "#/stats": "stats",
   "#/tips": "tips",
   "#/profile": "profile",
+  "#/createhabit": "create-habit",
+  "#/selecthabit": "select-habit",
+  "#/editprofile": "edit",
+  "#/achievements": "achievements",
 };
 const _pages = document.querySelectorAll(".page");
 const _basePath = location.pathname.replace("index.html", ""); // remove index.html from path
