@@ -25,25 +25,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
-// ========== CREATE ==========
-// create a habit
-function createHabit() {
-  // references to the input fields
-  let habitInput = document.querySelector("#habit");
-  let typeInput = document.querySelector("#type");
-  let descriptionInput = document.querySelector("#description");
-  let repetitionInput = document.querySelector("#repetition");
-  let timeInput = document.querySelector("#time");
-
-  let newHabit = {
-    habit: habitInput.value,
-    type: typeInput.value,
-    description: descriptionInput.value,
-    repetition: repetitionInput.value,
-    time: timeInput.value,
-  };
-
-  _habitRef.add(newHabit);
-  navigateTo("tasks");
-}
