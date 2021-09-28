@@ -25,3 +25,19 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// ========== CREATE ==========
+// create a habit
+function createHabit() {
+  // references to the input fields
+  let habitInput = document.querySelector("#name");
+  let descriptionInput = document.querySelector("#mail");
+
+  let newHabit = {
+    habit: habitInput.value,
+    description: descriptionInput.value,
+  };
+
+  _habitRef.add(newHabit);
+  navigateTo("home");
+}
