@@ -4,6 +4,7 @@
  */
 const _routes = {
   "#/": "tasks",
+  "#/form": "form",
   "#/stats": "stats",
   "#/tips": "tips",
   "#/profile": "profile",

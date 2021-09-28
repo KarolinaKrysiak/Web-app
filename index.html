@@ -33,8 +33,9 @@
             src="img/Icons/bar-chart.svg"
             alt="list icon"
             class="menu-icon"
-          /></div
-      ></a>
+          />
+        </div>
+      </a>
       <div class="button" id="myBtn">+</div>
       <a href="#/tips" class="nav-link"
         ><div>
@@ -58,7 +59,10 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <div class="modal-buttons">
+          <a href="#/" class="modal-button">Select habit</a>
+          <a href="#/form" class="modal-button">Create habit</a>
+        </div>
       </div>
     </div>
 
@@ -75,7 +79,74 @@
 
     </section>
 
-    
+    <!-- form page -->
+
+    <section id="form" class="page">
+      <h1>Create a habit</h1>
+      <form>
+        <input
+          id="habit"
+          type="text"
+          name="habit"
+          placeholder="Name of the habit..."
+        />
+
+        <div class="form-line">
+          <label for="types">Type:</label>
+
+          <select name="types" id="type">
+            <option value="none" disabled selected>Select type</option>
+            <option value="sport">Sport</option>
+            <option value="diet">Diet</option>
+            <option value="lifeStyle">Life style</option>
+            <option value="hobby">Hobby</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <input
+          id="description"
+          type="text"
+          name="description"
+          placeholder="Description..."
+        />
+
+        <div class="form-line">
+          <label for="repetition">Repetition:</label>
+
+          <select name="repetition" id="repetition">
+            <option value="none" disabled selected>Select your option</option>
+            <optgroup label="Daily">
+              <option value="everyDay">Every day</option>
+              <option value="weekdays">On weekdays</option>
+            </optgroup>
+            <optgroup label="Weekly">
+              <option value="everyWeek">Every week</option>
+              <option value="audi">Every second week</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-line">
+          <label for="appt">Notifications:</label>
+
+          <input type="time" id="time" name="appt" class="time" />
+        </div>
+
+        <div class="submit-buttons">
+          <button type="button" name="button">Discard</button>
+          <button
+            type="button"
+            style="background-color: #00c49a"
+            name="button"
+            onclick="createHabit()"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </section>
+
     <!-- stats page -->
     <section id="stats" class="page"></section>
 

@@ -3,14 +3,13 @@
   --dark-green: #00c49a;
   --black: #242423;
   --black-opacity: rgba(38, 76, 89, 0.2);
-  --light-black: rgb(172, 198, 201);
+  --grey: #c2c2c2;
   --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
   --white: #fff;
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --text-color-out-of-stock: rgb(89, 38, 38);
-  --text-color-in-stock: rgb(172, 198, 201);
+  --dark-grey: #616161;
 }
 
 /* ---------- general styling ---------- */
@@ -192,7 +191,7 @@ nav a.active {
 /* ---------- tools grid styling ---------- */
 
 .tools-grid {
-  background-color: var(--light-black);
+  background-color: var(--grey);
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 1em;
@@ -216,7 +215,7 @@ form {
   margin: auto;
 }
 
-form button {
+form {
   padding: 12px 15px;
   font-size: 1em;
   width: 100%;
@@ -224,28 +223,57 @@ form button {
 }
 
 button {
-  font-weight: 300;
+  font-weight: bold;
   text-align: center;
   cursor: pointer;
   border: none;
-  border-radius: 0;
+  border-radius: 100px;
   color: var(--text-color-light);
-  background-color: var(--black);
+  background-color: var(--dark-grey);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 1em;
   font-size: 0.8em;
+  width: 110px;
+  display: block;
 }
 
 input {
-  margin: 1em auto;
+  margin: 1em 0;
   width: 100%;
   max-width: 350px;
   padding: 1em;
   box-sizing: border-box;
   display: block;
   background: var(--white);
-  border: 5px solid var(--light-black);
+  border: 5px solid var(--grey);
+}
+
+select {
+  width: 50%;
+  display: block;
+}
+
+/* label and input layout */
+.form-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.time {
+  width: 50%;
+}
+
+/* submit buttons styling */
+
+.submit-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 70px;
 }
 
 /* ---------- loader styling ---------- */
@@ -264,7 +292,7 @@ input {
 .spinner {
   border: 5px solid var(--light-grey);
   border-radius: 50%;
-  border-top: 5px solid var(--light-black);
+  border-top: 5px solid var(--grey);
   width: 50px;
   height: 50px;
   -webkit-animation: spin 1s linear infinite;
@@ -357,7 +385,7 @@ input {
 
 /* ---------- custom select styling ---------- */
 select {
-  background-color: var(--light-black);
+  background-color: var(--grey);
   border: none;
   color: var(--black);
   padding: 1em;
@@ -391,10 +419,14 @@ select {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 400px;
 }
 
 /* The Close Button */
@@ -410,4 +442,22 @@ select {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* style for buttons */
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.modal-button {
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--dark-green);
+  width: 70%;
+  text-align: center;
+  margin: 15px auto;
+  border-radius: 100px;
 }
