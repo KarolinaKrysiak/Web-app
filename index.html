@@ -80,15 +80,17 @@
           placeholder="Name of the habit..."
         />
 
-        <label for="types">Type:</label>
+        <div>
+          <label for="types">Type:</label>
 
-        <select name="types" id="types">
-          <option value="sport">Sport</option>
-          <option value="diet">Diet</option>
-          <option value="lifeStyle">Life style</option>
-          <option value="hobby">Hobby</option>
-          <option value="other">Other</option>
-        </select>
+          <select name="types" id="types">
+            <option value="sport">Sport</option>
+            <option value="diet">Diet</option>
+            <option value="lifeStyle">Life style</option>
+            <option value="hobby">Hobby</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
         <input
           id="description"
@@ -97,22 +99,26 @@
           placeholder="Description..."
         />
 
-        <label for="repetition">Repetition:</label>
+        <div>
+          <label for="repetition">Repetition:</label>
 
-        <select name="repetition" id="repetition">
-          <optgroup label="Daily">
-            <option value="everyDay">Every day</option>
-            <option value="weekdays">On weekdays</option>
-          </optgroup>
-          <optgroup label="Weekly">
-            <option value="everyWeek">Every week</option>
-            <option value="audi">Every second week</option>
-          </optgroup></select
-        ><br />
+          <select name="repetition" id="repetition">
+            <optgroup label="Daily">
+              <option value="everyDay">Every day</option>
+              <option value="weekdays">On weekdays</option>
+            </optgroup>
+            <optgroup label="Weekly">
+              <option value="everyWeek">Every week</option>
+              <option value="audi">Every second week</option>
+            </optgroup></select
+          ><br />
+        </div>
 
-        <label for="appt">Notifications:</label>
+        <div>
+          <label for="appt">Notifications:</label>
 
-        <input type="time" id="appt" name="appt" />
+          <input type="time" id="appt" name="appt" />
+        </div>
 
         <div class="submit-buttons">
           <button type="button" name="button">Discard</button>
@@ -120,7 +126,7 @@
             type="button"
             style="background-color: #00c49a"
             name="button"
-            onclick="addNewProduct()"
+            onclick="createHabit()"
           >
             Save
           </button>

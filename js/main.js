@@ -30,8 +30,8 @@ window.onclick = function (event) {
 // create a habit
 function createHabit() {
   // references to the input fields
-  let habitInput = document.querySelector("#name");
-  let descriptionInput = document.querySelector("#mail");
+  let habitInput = document.querySelector("#habit");
+  let descriptionInput = document.querySelector("#description");
 
   let newHabit = {
     habit: habitInput.value,
@@ -39,5 +39,5 @@ function createHabit() {
   };
 
   _habitRef.add(newHabit);
-  navigateTo("home");
+  navigateTo("tasks");
 }
