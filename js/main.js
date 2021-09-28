@@ -31,11 +31,17 @@ window.onclick = function (event) {
 function createHabit() {
   // references to the input fields
   let habitInput = document.querySelector("#habit");
+  let typeInput = document.querySelector("#type");
   let descriptionInput = document.querySelector("#description");
+  let repetitionInput = document.querySelector("#repetition");
+  let timeInput = document.querySelector("#time");
 
   let newHabit = {
     habit: habitInput.value,
+    type: typeInput.value,
     description: descriptionInput.value,
+    repetition: repetitionInput.value,
+    time: timeInput.value,
   };
 
   _habitRef.add(newHabit);

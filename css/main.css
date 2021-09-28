@@ -251,6 +251,7 @@ input {
 
 select {
   width: 50%;
+  display: block;
 }
 
 /* label and input layout */
