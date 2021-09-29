@@ -1,0 +1,42 @@
+[
+   {
+    "icon" : "img/icons/drop.svg", 
+    "name": "Drink 2L of watter",
+    "tag": "Diet"
+  },
+  {
+    "icon" : "img/icons/dumbbell.svg", 
+    "name": "Do 10 push-ups a day",
+    "tag": "Sport"
+  },
+  {
+    "icon" : "img/icons/exercise.svg", 
+    "name": "Do yoga for 20min",
+    "tag": "Mental Healt"
+  },
+  {
+    "icon" : "img/icons/salad.svg", 
+    "name": "Eat your vegetables",
+    "tag": "Diet"
+  },
+  {
+    "icon" : "img/icons/dumbbell.svg", 
+    "name": "Run 10km a week",
+    "tag": "Sport"
+  },
+  {
+    "icon" : "img/icons/dumbbell.svg", 
+    "name": "Do crossfit",
+    "tag": "Sport"
+  },
+  {
+    "icon" : "img/icons/exercise.svg", 
+    "name": "Meditate 10 min",
+    "tag": "Mental Health "
+  },
+  {
+    "icon" : "img/icons/salad.svg", 
+    "name": "Get a banana or something",
+    "tag": "Diet"
+  }
+]

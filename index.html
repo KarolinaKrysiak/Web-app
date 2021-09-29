@@ -18,7 +18,7 @@
   <body>
     <!-- tabbar navigation -->
     <nav class="tabbar">
-      <a href="#/tasks" class="nav-link">
+      <a href="#/" class="nav-link">
         <div>
           <img
             src="img/Icons/to-do-list.svg"
@@ -67,8 +67,16 @@
     </div>
 
     <!-- pages -->
+
     <!-- tasks page -->
-    <section id="tasks" class="page"></section>
+    <section id="tasks" class="page">
+      <input
+        type="search"
+        placeholder="Search"
+        onkeyup="search(this.value)"
+        onsearch="search('')"
+      />
+    </section>
 
     <!-- form page -->
 
@@ -76,16 +84,16 @@
       <h1>Create a habit</h1>
       <form>
         <input
-          id="habit"
+          id="name"
           type="text"
-          name="habit"
+          name="name"
           placeholder="Name of the habit..."
         />
 
         <div class="form-line">
-          <label for="types">Type:</label>
+          <label for="tags">Type:</label>
 
-          <select name="types" id="type">
+          <select name="tags" id="tag">
             <option value="none" disabled selected>Select type</option>
             <option value="sport">Sport</option>
             <option value="diet">Diet</option>
@@ -130,7 +138,7 @@
             type="button"
             style="background-color: #00c49a"
             name="button"
-            onclick="createHabit()"
+            onclick="add()"
           >
             Save
           </button>
@@ -161,7 +169,10 @@
 
     <!-- SPA Router functionality  -->
     <script src="js/router.js"></script>
+
     <!-- main js file -->
     <script src="js/main.js"></script>
+
+    <script src="js/select_habits.js"></script>
   </body>
 </html>
