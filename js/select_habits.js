@@ -92,10 +92,10 @@ function appendFavHabits() {
  */
 function generateFavhabitButton(habitId) {
   let btnTemplate = `
-    <button onclick="addToFavourites('${habitId}')">✔</button>`;
+    <button class="move-buttons" onclick="addToFavourites('${habitId}')">✔</button>`;
   if (isFavhabit(habitId)) {
     btnTemplate = `
-      <button onclick="removeFromFavourites('${habitId}')" class="rm">✖</button>`;
+      <button onclick="removeFromFavourites('${habitId}')" class="rm move-buttons">✖</button>`;
   }
   return btnTemplate;
 }
