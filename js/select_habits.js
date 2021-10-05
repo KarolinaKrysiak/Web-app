@@ -84,7 +84,7 @@ function appendFavHabits() {
   if (_favHabits.length === 0) {
     html = "<p>No habits added</p>"
   }
-  document.querySelector("#tasks").innerHTML = html;
+  document.querySelector("#container_tsk").innerHTML = html;
 }
 
 /**
