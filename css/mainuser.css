@@ -225,6 +225,20 @@ input {
 
 /*---------friends profile page --------*/
 
+#back-div {
+  display: flex;
+  text-align: center;
+  width: 110px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+#back-text {
+  align-items: center;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
 #friends-profile {
   display: flexbox;
   padding-top: 35px;
@@ -279,4 +293,37 @@ input {
 #achievement-img {
   width: 48px;
   height: 48px;
+}
+
+/* ------- Achievements page --------*/
+
+#achievement-page-box {
+  display: flex;
+  align-items: row;
+  background-color: #e6e6e6;
+  margin: auto;
+  width: 70%;
+  height: 166px;
+  padding: 10px;
+  border-radius: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-top: 22px;
+}
+
+#achievement-circle {
+  background-color: #c2c2c2;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28px;
+}
+
+#achievement-page-text {
+  font-weight: bold;
+  padding-left: 26px;
 }

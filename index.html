@@ -151,7 +151,7 @@
 
       <div href="#/" id="achievement-button-box">
         <img src="/img/trophy.svg" id="trophy-img" alt="trophy" />
-        <a href="#/achievement" id="achievement-button">Achievements</a>
+        <a href="#/achievements" id="achievement-button">Achievements</a>
       </div>
 
       <div id="friends-bar">
@@ -164,7 +164,7 @@
 
       <div id="friends-box">
         <img src="/img/josé.PNG" id="friends-img" alt="person" />
-        <a href="friends" id="friends-text">Jose</a>
+        <a href="#/friends" id="friends-text">Jose</a>
       </div>
     </section>
 
@@ -190,7 +190,11 @@
 
     <!----friends page-->
     <section id="friends" class="page">
-      <a href="#/" id="">Back</a>
+      <div id="back-div">
+        <img src="/img/Polygon 1.svg" class="" alt="polygon" />
+        <a href="#/profile" id="back-text">back</a>
+      </div>
+
       <div id="friends-profile">
         <img src="/img/josé.PNG" id="friends-profile-img" />
         <h2 id="friends-profile-text">Name: José</h2>
@@ -229,7 +233,51 @@
     </section>
 
     <!-- achievement page -->
-    <section id="achievements" class="page"></section>
+    <section id="achievements" class="page">
+      <div id="back-div">
+        <img src="/img/Polygon 1.svg" class="" alt="polygon" />
+        <a href="#/profile" id="back-text">back</a>
+      </div>
+      <h3>Achievements</h3>
+
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/list.svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "Task Master" <br /><br />
+          Do 10 task
+        </h3>
+      </div>
+
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/footprints (1).svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "First Steps" <br /><br />
+          Login 7 days in a row
+        </h3>
+      </div>
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/rocket.svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "And so it begins" <br /><br />
+          Add your first habit to follow
+        </h3>
+      </div>
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/clipboards.svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "More Habits" <br /><br />
+          Add 5 more habits to follow
+        </h3>
+      </div>
+    </section>
 
     <!-- SPA Router functionality  -->
     <script src="js/router.js"></script>
