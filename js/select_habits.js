@@ -1,29 +1,30 @@
-var _boxes = [];
-var _mainBoxes = [];
+var _habits = [];
+var _mainHabits = [];
+let _favHabits = [];
 
 
 
-async function getHabbits() {
+async function getHabits() {
   let response = await fetch("js/data.json");
   let data = await response.json();
 console.log(data)
-  _boxes = data;
-  appendHabbits(data);
+  _habits = data;
+  appendHabits(data);
 }
-getHabbits();
+getHabits();
 
 
 
-function appendHabbits(habbits) {
+function appendHabits(habits) {
   let html = "";
-  for (let habbit of habbits) {
+  for (const habit of habits) {
     html += /*html*/ `
-<article >
+<article>
 
-      <img src="${habbit.icon}">
-        <h4>${habbit.name}</h4>
-        <p >${habbit.tag}</p>
-
+      <img src="${habit.icon}">
+        <h4>${habit.name}</h4>
+        <p >${habit.tag}</p>
+        ${generateFavhabitButton(habit.id)}
         </article>
     `;
  
@@ -31,30 +32,96 @@ function appendHabbits(habbits) {
   document.querySelector('#container_slct').innerHTML = html;
 }
 
-function addMainHb (){
-  document.querySelector("container_tsk").innerHTML +=/*html*/ `
-  <article onclick="addMainHb(${habbit.id})">
+// function addMainHb (){
+//  document.querySelector("container_tsk").innerHTML +=/*html*/ `
+  //<article onclick="addMainHb(${habit.id})">
+//
+  //    <img src="${habit.icon}">
+    //    <h4>${habit.name}</h4>
+      //  <p >${habit.tag}</p>
+//
+//        </article>
+//`;
 
-      <img src="${habbit.icon}">
-        <h4>${habbit.name}</h4>
-        <p >${habbit.tag}</p>
-
-        </article>
-`;
-
-}
+//}
 
 
 
 function search(value) {
   let searchQuery = value.toLowerCase();
-  let filteredHabbits = [];
-  for (let habbit of _boxes) {
-    let name = habbit.name.toLowerCase();
-    let tag  = habbit.tag.toLowerCase();
+  let filteredHabits = [];
+  for (let habit of _habits) {
+    let name = habit.name.toLowerCase();
+    let tag  = habit.tag.toLowerCase();
     if (name.includes(searchQuery) || tag.includes(searchQuery)) {
-      filteredHabbits.push(habbit);
+      filteredHabits.push(habit);
     }
   }
-  appendHabbits(filteredHabbits);
+  appendHabits(filteredHabits);
+}
+
+
+/* ---------- Main page tasks ---------- */
+
+/**
+ * Appending fav habits to the DOM by looping through _favHabits
+ */
+function appendFavHabits() {
+  let html = "";
+  for (const habit of _favHabits) {
+    console.log(habit);
+    html += /*html*/`
+      <article>
+      <img src="${habit.icon}">
+      <h4>${habit.name}</h4>
+      <p >${habit.tag}</p>
+
+       ${generateFavhabitButton(habit.id)}
+      </article>
+    `;
+  }
+  // if no habits display a default text
+  if (_favHabits.length === 0) {
+    html = "<p>No habits added</p>"
+  }
+  document.querySelector("#tasks").innerHTML = html;
+}
+
+/**
+ * Generating the fav button
+ */
+function generateFavhabitButton(habitId) {
+  let btnTemplate = `
+    <button onclick="addToFavourites('${habitId}')">✔</button>`;
+  if (isFavhabit(habitId)) {
+    btnTemplate = `
+      <button onclick="removeFromFavourites('${habitId}')" class="rm">✖</button>`;
+  }
+  return btnTemplate;
+}
+
+/**
+ * Adding habit to favorites by given habitId
+ */
+function addToFavourites(habitId) {
+  let favhabit = _habits.find(habit => habit.id === habitId);
+  _favHabits.push(favhabit);
+  appendHabits(_habits); // update the DOM to display the right button
+  appendFavHabits(); // update the DOM to display the right items from the _favHabits list
+}
+
+/**
+ * Removing habit from favorites by given habitId
+ */
+function removeFromFavourites(habitId) {
+  _favHabits = _favHabits.filter(habit => habit.id !== habitId);
+  appendHabits(_habits); // update the DOM to display the right button
+  appendFavHabits(); // update the DOM to display the right items from the _favHabits list
+}
+
+/**
+ * Checking if habit already is added to _favHabits
+ */
+function isFavhabit(habitId) {
+  return _favHabits.find(habit => habit.id === habitId); // checking if _favHabits has the habit with matching id or not
 }
