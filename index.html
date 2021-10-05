@@ -12,6 +12,7 @@
       content="Get started with HTML, CSS and JavaScript"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slelected_habits.css" />
     <link rel="shortcut icon" type="image/png" href="#" />
   </head>
 
@@ -60,7 +61,7 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="modal-buttons">
-          <a href="#/" onclick="closeModal()" class="modal-button"
+          <a href="#/selecthabit" onclick="closeModal()" class="modal-button"
             >Select habit</a
           >
           <a href="#/form" onclick="closeModal()" class="modal-button"
@@ -74,17 +75,17 @@
 
     <!-- tasks page -->
     <section id="tasks" class="page">
-      <input
-        type="search"
-        placeholder="Search"
-        onkeyup="search(this.value)"
-        onsearch="search('')"
-      />
+
+      <div id="container_tsk" class="grid_container"></div>
+
     </section>
 
     <!-- form page -->
 
     <section id="form" class="page">
+
+      
+      
       <h1>Create a habit</h1>
       <form>
         <input
@@ -154,16 +155,26 @@
     <section id="stats" class="page"></section>
 
     <!-- tips page -->
-    <section id="tips" class="page"></section>
+    <section id="tips" class="page">
+      
+    </section>
 
     <!-- profile page -->
     <section id="profile" class="page"></section>
 
     <!-- creat habit page -->
-    <section id="create-habit" class="page"></section>
+    <section id="create-habit" class="page">
+ 
+
+    </section>
 
     <!-- select habit page -->
-    <section id="select-habit" class="page"></section>
+    <section id="select-habit" class="page">
+      <input type="search" placeholder="Search" onkeyup="search(this.value)" onsearch="search('')">
+
+<div id="container_slct" class="grid_container"></div>
+ 
+    </section>
 
     <!-- edit profile page -->
     <section id="edit" class="page"></section>
