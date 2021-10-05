@@ -8,7 +8,7 @@
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
   --white: #fff;
-  --font-family:'Roboto', sans-serif, Helvetica, Arial, sans-serif;
+  --font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
   --dark-grey: #616161;
 }
 
@@ -45,7 +45,6 @@ h3 {
 
 /* ---------- nav styling ---------- */
 nav {
- 
   background-color: var(--black);
   position: fixed;
   bottom: 0;
@@ -53,7 +52,6 @@ nav {
   right: 0;
   z-index: 998;
   min-width: 350px;
-  
 }
 
 /* Style the links inside the navigation bar */
@@ -78,6 +76,19 @@ nav a:hover {
 nav a.active {
   background-color: var(--dark-green);
   color: var(--black);
+}
+
+/*---------Calendar---------*/
+
+#calendar-text {
+  margin-top: -40px;
+  overflow-x: auto;
+}
+
+#top-calendar {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
 }
 
 /* Add button */
