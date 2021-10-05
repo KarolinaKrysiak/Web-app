@@ -20,16 +20,16 @@ background-color:#E6E6E6;
 border-radius: 20px;
 width: 60%;
 margin-top: 10px;
-height: 80%;
+height: 100%;
 
 
 }
 
 .grid_container>article img{
-  width: 70%;
+  width:80%;
 justify-self: start; 
 align-self: start; 
-padding-top: 20px;
+padding-top: 15px;
 margin-left: 10px;
 
 
