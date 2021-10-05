@@ -45,6 +45,7 @@ h3 {
 
 /* ---------- nav styling ---------- */
 nav {
+ 
   background-color: var(--black);
   position: fixed;
   bottom: 0;
@@ -52,6 +53,7 @@ nav {
   right: 0;
   z-index: 998;
   min-width: 350px;
+  
 }
 
 /* Style the links inside the navigation bar */

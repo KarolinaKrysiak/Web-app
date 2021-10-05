@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="109" viewBox="0 0 336 109">
+  <g id="ccaalendar" transform="translate(-50 -670)">
+    <g id="Rectangle_99" data-name="Rectangle 99" transform="translate(50 677)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="81" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="80" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_92" data-name="Rectangle 92" transform="translate(191 677)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="81" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="80" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_91" data-name="Rectangle 91" transform="translate(336 707)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="51" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="50" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_100" data-name="Rectangle 100" transform="translate(79 691)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="67" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="66" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_93" data-name="Rectangle 93" transform="translate(220 683)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="75" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="74" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_88" data-name="Rectangle 88" transform="translate(365 674)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="84" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="83" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_101" data-name="Rectangle 101" transform="translate(108 696)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="62" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="61" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_94" data-name="Rectangle 94" transform="translate(249 670)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="88" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="87" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_98" data-name="Rectangle 98" transform="translate(137 670)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="88" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="87" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(278 704)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="54" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="53" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_97" data-name="Rectangle 97" transform="translate(166 691)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="67" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="66" rx="10" fill="none"/>
+    </g>
+    <g id="Rectangle_96" data-name="Rectangle 96" transform="translate(307 691)" fill="#00c49a" stroke="#5b8e7d" stroke-width="1">
+      <rect width="21" height="67" rx="10.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="20" height="66" rx="10" fill="none"/>
+    </g>
+    <text id="J" transform="translate(55 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-1.785" y="11">J</tspan></text>
+    <text id="J-2" data-name="J" transform="translate(226 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-1.785" y="11">J</tspan></text>
+    <text id="F" transform="translate(85 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-2.441" y="11">F</tspan></text>
+    <text id="A" transform="translate(255 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-3.225" y="11">A</tspan></text>
+    <text id="M" transform="translate(114 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-4.49" y="11">M</tspan></text>
+    <text id="S" transform="translate(284 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-2.656" y="11">S</tspan></text>
+    <text id="A-2" data-name="A" transform="translate(143 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-3.225" y="11">A</tspan></text>
+    <text id="O" transform="translate(313 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-3.77" y="11">O</tspan></text>
+    <text id="M-2" data-name="M" transform="translate(172 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-4.49" y="11">M</tspan></text>
+    <text id="N" transform="translate(342 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-3.74" y="11">N</tspan></text>
+    <text id="J-3" data-name="J" transform="translate(197 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-1.785" y="11">J</tspan></text>
+    <text id="D" transform="translate(371 765)" fill="#707070" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-3.506" y="11">D</tspan></text>
+  </g>
+</svg>
