@@ -12,6 +12,7 @@
       content="Get started with HTML, CSS and JavaScript"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/mainuser.css" />
     <link rel="shortcut icon" type="image/png" href="#" />
   </head>
 
@@ -145,7 +146,27 @@
     <section id="tips" class="page"></section>
 
     <!-- profile page -->
-    <section id="profile" class="page"></section>
+    <section id="profile" class="page">
+      <section id="user-container" class="user-grid-container"></section>
+
+      <div href="#/" id="achievement-button-box">
+        <img src="/img/trophy.svg" id="trophy-img" alt="trophy" />
+        <a href="#/achievement" id="achievement-button">Achievements</a>
+      </div>
+
+      <div id="friends-bar">
+        <p id="friends-devide-text">Friends</p>
+      </div>
+
+      <div id="add-friend">
+        <p id="add-text">Add new</p>
+      </div>
+
+      <div id="friends-box">
+        <img src="/img/josé.PNG" id="friends-img" alt="person" />
+        <a href="friends" id="friends-text">Jose</a>
+      </div>
+    </section>
 
     <!-- creat habit page -->
     <section id="create-habit" class="page"></section>
@@ -154,7 +175,58 @@
     <section id="select-habit" class="page"></section>
 
     <!-- edit profile page -->
-    <section id="edit" class="page"></section>
+    <section id="edit" class="page">
+      <header class="topbar">
+        <h2>Edit Profile</h2>
+      </header>
+      <form>
+        <input id="nameEdit" type="text" name="brand" placeholder="Brand" />
+        <input id="emailEdit" type="text" name="model" placeholder="Model" />
+        <input id="imgEdit" type="text" name="img" placeholder="Image URL" />
+        <a id="back-button" href="#products">Discard</a>
+        <button type="button" name="button" onclick="saveUser()">Save</button>
+      </form>
+    </section>
+
+    <!----friends page-->
+    <section id="friends" class="page">
+      <a href="#/" id="">Back</a>
+      <div id="friends-profile">
+        <img src="/img/josé.PNG" id="friends-profile-img" />
+        <h2 id="friends-profile-text">Name: José</h2>
+      </div>
+
+      <div id="challenge-achievement">
+        <img src="/img/Icons/high-five.svg" id="challenge-img" />
+        <p>Do the habit together/challenge</p>
+      </div>
+
+      <div id="friends-bar">
+        <p id="friends-devide-text">Achievements</p>
+      </div>
+
+      <div id="achievement-img-box">
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/to-do-list.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/rocket.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/high-five.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/calendar (1).svg" id="achievement-img" alt="" />
+        </div>
+
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/calendar.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/footprints.svg" id="achievement-img" alt="" />
+        </div>
+      </div>
+    </section>
 
     <!-- achievement page -->
     <section id="achievements" class="page"></section>
