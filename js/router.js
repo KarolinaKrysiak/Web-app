@@ -12,6 +12,7 @@ const _routes = {
   "#/selecthabit": "select-habit",
   "#/editprofile": "edit",
   "#/achievements": "achievements",
+  "#/friends": "friends",
 };
 const _pages = document.querySelectorAll(".page");
 const _basePath = location.pathname.replace("index.html", ""); // remove index.html from path
