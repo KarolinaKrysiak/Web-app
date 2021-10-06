@@ -3,7 +3,7 @@ var _mainHabits = [];
 let _favHabits = [];
 
 
-
+// Iura
 async function getHabits() {
   let response = await fetch("js/data.json");
   let data = await response.json();
@@ -61,11 +61,21 @@ function search(value) {
 }
 
 
+
+// -------------------------------------------------------------------
+
+
+
+
+
+
 /* ---------- Main page tasks ---------- */
 
 /**
  * Appending fav habits to the DOM by looping through _favHabits
  */
+
+// Karolina
 function appendFavHabits() {
   let html = "";
   for (const habit of _favHabits) {
@@ -125,3 +135,5 @@ function removeFromFavourites(habitId) {
 function isFavhabit(habitId) {
   return _favHabits.find(habit => habit.id === habitId); // checking if _favHabits has the habit with matching id or not
 }
+
+//--------------------------------------------------------------------------

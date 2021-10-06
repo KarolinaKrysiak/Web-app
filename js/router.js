@@ -2,6 +2,8 @@
  * All routes of the SPA
  * "path": "id of page in DOM"
  */
+
+// ALL Karolina
 const _routes = {
   "#/": "tasks",
   "#/form": "form",

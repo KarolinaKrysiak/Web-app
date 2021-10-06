@@ -1,4 +1,5 @@
 "use strict";
+//Karolina
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -29,6 +30,11 @@ window.onclick = function (event) {
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
+
+
+//--------------------------------------------------------------------------------------
+
+// Mika 
 
 /* global variables: _user _selectedUserId*/
 let _user = [];
@@ -90,3 +96,5 @@ function saveUser() {
   //navigating back
   navigateTo("products");
 }
+
+//--------------------------------------------------------------------------------------------
