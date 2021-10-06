@@ -2,6 +2,8 @@
  * All routes of the SPA
  * "path": "id of page in DOM"
  */
+
+// ALL Karolina
 const _routes = {
   "#/": "tasks",
   "#/form": "form",
@@ -12,6 +14,7 @@ const _routes = {
   "#/selecthabit": "select-habit",
   "#/editprofile": "edit",
   "#/achievements": "achievements",
+  "#/friends": "friends",
 };
 const _pages = document.querySelectorAll(".page");
 const _basePath = location.pathname.replace("index.html", ""); // remove index.html from path

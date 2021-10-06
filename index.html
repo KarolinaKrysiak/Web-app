@@ -2,20 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>SINGLE PAGE WEB APP TEMPLATE</title>
+    <title>Healthy Habits</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="description"
-      content="Get started with HTML, CSS and JavaScript"
-    />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/ideas.css" />
+    <link rel="stylesheet" href="css/slelected_habits.css" />
+    <link rel="stylesheet" href="css/stats.css" />
+    <link rel="stylesheet" href="/css/mainuser.css" />
     <link rel="shortcut icon" type="image/png" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+     <!-- Karolina -->
     <!-- tabbar navigation -->
     <nav class="tabbar">
       <a href="#/" class="nav-link">
@@ -60,8 +68,12 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="modal-buttons">
-          <a href="#/" class="modal-button">Select habit</a>
-          <a href="#/form" class="modal-button">Create habit</a>
+          <a href="#/selecthabit" onclick="closeModal()" class="modal-button"
+            >Select habit</a
+          >
+          <a href="#/form" onclick="closeModal()" class="modal-button"
+            >Create habit</a
+          >
         </div>
       </div>
     </div>
@@ -70,12 +82,10 @@
 
     <!-- tasks page -->
     <section id="tasks" class="page">
-      <input
-        type="search"
-        placeholder="Search"
-        onkeyup="search(this.value)"
-        onsearch="search('')"
-      />
+      <h3 id="calendar-text">Calendar</h3>
+      <img src="/img/Gruppe 23.svg" alt="calendar" id="top-calendar" />
+
+      <div id="container_tsk" class="grid_container"></div>
     </section>
 
     <!-- form page -->
@@ -145,28 +155,264 @@
         </div>
       </form>
     </section>
+<!--------------------------------------------------------------------------------- -->
 
+<!---- Iura -->
     <!-- stats page -->
-    <section id="stats" class="page"></section>
+    <section id="stats" class="page">
+      <section class="circle_top_container">
+        <div class="circle_top">
+          <p class="text_style">22</p>
+          <img src="img/Icons/flame.svg" width="150px" />
+          <p class="text_style">Streak</p>
+        </div>
+      </section>
+
+      <h1 class="h1_style">September</h1>
+      <section class="actual_calendar">
+        <img src="img/calendar.svg" width="400px" />
+      </section>
+      <h1 class="h1_style">2021</h1>
+      <section class="actual_calendar">
+        <img src="img/caalendar.svg" width="400px" />
+      </section>
+    </section>
 
     <!-- tips page -->
-    <section id="tips" class="page"></section>
+    <section id="tips" class="page">
+      <div class="tips_container" id="ligth">
+        <img src="img/Icons/lightbulb.svg" class="actual_light" />
+        <p class="be_something">
+          Even the small steps are still steps forward!
+        </p>
+      </div>
 
+      <div class="grid_ideas" id="ideas"></div>
+
+      <div class="card_container">
+        <div class="card">
+          <div class="card-header">
+            <img src="img/ideas/undraw_breakfast_psiw.svg" alt="breakfast" />
+          </div>
+
+          <div class="card-body">
+            <h4>Best habits to improve your diet</h4>
+            <p>Following the right diet is important to feel better</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="img/ideas/undraw_breaking_barriers_vnf3.svg"
+              alt="motivation"
+            />
+          </div>
+          <div class="card-body">
+            <h4>How to stay motivated</h4>
+            <p>
+              This is all you need to follow new habits and change your life
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="img/ideas/undraw_target_kriv.svg" alt="city" />
+          </div>
+          <div class="card-body">
+            <h4>How to set the right goals</h4>
+            <p>Sometimes it's better to have a better start</p>
+          </div>
+        </div>
+      </div>
+      <div class="bar">Recomended</div>
+
+      <div class="card_container">
+        <div class="card">
+          <div class="card-header">
+            <img src="img/ideas/undraw_yoga_248n.svg" alt="city" />
+          </div>
+
+          <div class="card-body">
+            <h4>Yoga for newbies</h4>
+            <p>Get your stretches and begginer moves here!</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="img/ideas/undraw_fitness_stats_sht6.svg" alt="city" />
+          </div>
+          <div class="card-body">
+            <h4>10 tips on how to start exercise</h4>
+            <p>Number 8 will shock you !</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="img/ideas/undraw_Explore_re_8l4v (1).svg" alt="city" />
+          </div>
+          <div class="card-body">
+            <h4>how to not lose motivation</h4>
+            <p>It's hard to stay on track all the time so here are some...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--------------------------------------------------------------------------------- -->
+
+<!---Mika -->
     <!-- profile page -->
-    <section id="profile" class="page"></section>
+    <section id="profile" class="page">
+      <section id="user-container" class="user-grid-container"></section>
 
+      <div href="#/" id="achievement-button-box">
+        <img src="/img/trophy.svg" id="trophy-img" alt="trophy" />
+        <a href="#/achievements" id="achievement-button">Achievements</a>
+      </div>
+
+      <div id="friends-bar">
+        <p id="friends-devide-text">Friends</p>
+      </div>
+
+      <div id="add-friend">
+        <p id="add-text">Add new</p>
+      </div>
+
+      <div id="friends-box">
+        <img src="/img/josé.PNG" id="friends-img" alt="person" />
+        <a href="#/friends" id="friends-text">Jose</a>
+      </div>
+    </section>
+<!--------------------------------------------------------------------------------- -->
+
+<!-------------Iura------------------- -->
     <!-- creat habit page -->
     <section id="create-habit" class="page"></section>
 
     <!-- select habit page -->
-    <section id="select-habit" class="page"></section>
+    <section id="select-habit" class="page">
+      <input
+        type="search"
+        placeholder="Search"
+        onkeyup="search(this.value)"
+        onsearch="search('')"
+      />
 
+      <div id="container_slct" class="grid_container"></div>
+    </section>
+<!--------------------------------------------------------------------------------- -->
+
+<!-------------------------Mika-------------------------- -->
     <!-- edit profile page -->
-    <section id="edit" class="page"></section>
+    <section id="edit" class="page">
+      <header class="topbar">
+        <h2>Edit Profile</h2>
+      </header>
+      <form>
+        <input id="nameEdit" type="text" name="brand" placeholder="Brand" />
+        <input id="emailEdit" type="text" name="model" placeholder="Model" />
+        <input id="imgEdit" type="text" name="img" placeholder="Image URL" />
+        <a id="back-button" href="#products">Discard</a>
+        <button type="button" name="button" onclick="saveUser()">Save</button>
+      </form>
+    </section>
+
+    <!----friends page-->
+    <section id="friends" class="page">
+      <div id="back-div">
+        <img src="/img/Polygon 1.svg" class="" alt="polygon" />
+        <a href="#/profile" id="back-text">back</a>
+      </div>
+
+      <div id="friends-profile">
+        <img src="/img/josé.PNG" id="friends-profile-img" />
+        <h2 id="friends-profile-text">Name: José</h2>
+      </div>
+
+      <div id="challenge-achievement">
+        <img src="/img/Icons/high-five.svg" id="challenge-img" />
+        <p>Do the habit together/challenge</p>
+      </div>
+
+      <div id="friends-bar">
+        <p id="friends-devide-text">Achievements</p>
+      </div>
+
+      <div id="achievement-img-box">
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/clipboards.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/rocket.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/high-five.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/calendar (1).svg" id="achievement-img" alt="" />
+        </div>
+
+        <div id="achievement-img-circle">
+          <img src="/img/Icons/calendar.svg" id="achievement-img" alt="" />
+        </div>
+        <div id="achievement-img-circle">
+          <img
+            src="/img/Icons/footprints (1).svg"
+            id="achievement-img"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- achievement page -->
-    <section id="achievements" class="page"></section>
+    <section id="achievements" class="page">
+      <div id="back-div">
+        <img src="/img/Polygon 1.svg" class="" alt="polygon" />
+        <a href="#/profile" id="back-text">back</a>
+      </div>
+      <h3>Achievements</h3>
 
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/list.svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "Task Master" <br /><br />
+          Do 10 task
+        </h3>
+      </div>
+
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/footprints (1).svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "First Steps" <br /><br />
+          Login 7 days in a row
+        </h3>
+      </div>
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/rocket.svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "And so it begins" <br /><br />
+          Add your first habit to follow
+        </h3>
+      </div>
+      <div id="achievement-page-box">
+        <div id="achievement-circle">
+          <img src="/img/Icons/clipboards.svg" id="achievement-img" />
+        </div>
+        <h3 id="achievement-page-text">
+          "More Habits" <br /><br />
+          Add 5 more habits to follow
+        </h3>
+      </div>
+    </section>
+<!--------------------------------------------------------------------------------- -->
     <!-- SPA Router functionality  -->
     <script src="js/router.js"></script>
 

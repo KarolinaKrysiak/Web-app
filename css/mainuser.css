@@ -1,0 +1,333 @@
+/*Everything Mika*/
+
+
+
+/* ---------- root variables ---------- */
+:root {
+  --green: rgb(38, 76, 89);
+  --green-opacity: rgba(38, 76, 89, 0.2);
+  --light-green: rgb(172, 198, 201);
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+  --white: #fff;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text-color-out-of-stock: rgb(89, 38, 38);
+  --text-color-in-stock: rgb(172, 198, 201);
+}
+
+/* ---------- general styling ---------- */
+html {
+  color: var(--text-color-dark);
+  font-family: var(--font-family);
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0.5em 0 0.2em;
+}
+
+/* ---------- grid container styling ---------- */
+.user-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  gap: 1em;
+}
+
+.user-grid-container > article {
+  text-align: center;
+  padding: 2em 1em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.user-grid-container > article img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* ---------- form styling ---------- */
+/* input form stryling */
+form {
+  margin: auto;
+}
+
+form button {
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 15px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 144px;
+  background-color: #00c49a;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+#back-button {
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  max-width: 144px;
+  background-color: #616161;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-right: 52px;
+}
+
+#edit-button {
+  text-align: right;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  color: #707070;
+  background-color: #ffffff;
+  text-decoration: underline;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+}
+
+input {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: block;
+  background: var(--white);
+  border: 1px solid #c2c2c2;
+}
+
+/*  achievement button */
+
+#achievement-button-box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  align-content: center;
+  background-color: #e6e6e6;
+  width: 75%;
+  max-width: 600px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+
+#trophy-img {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+#achievement-button {
+  padding: 1em;
+  text-decoration: none;
+  color: #707070;
+  width: 70%;
+  text-align: center;
+  margin: 15px auto;
+  border-radius: 100px;
+}
+
+/*--------Friends devide thingy -----*/
+
+#friends-bar {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  height: 36px;
+  background-color: #c2c2c2;
+}
+
+#friends-devide-text {
+  margin: 10px auto;
+}
+
+/* ------Friends section ------*/
+
+#add-friend {
+  display: flex;
+  align-content: center;
+  background-color: #00c49a;
+  margin-left: 10%;
+  margin-top: 18px;
+  width: 35%;
+  height: 50px;
+  position: relative;
+  border-radius: 25px;
+  max-width: 600px;
+}
+
+#add-text {
+  display: flex;
+  text-align: center;
+  margin: 16px auto;
+}
+
+/*------ friends section -------*/
+
+#friends-box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  margin-top: 106px;
+  align-content: center;
+  background-color: #e6e6e6;
+  width: 75%;
+  max-width: 600px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+
+#friends-text {
+  padding: 1em;
+  text-decoration: none;
+  color: #707070;
+  text-align: center;
+  margin: 15px auto;
+  border-radius: 100px;
+}
+
+#friends-img {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  padding-left: 25px;
+  padding-top: 15px;
+  border-radius: 50%;
+}
+
+/*---------friends profile page --------*/
+
+#back-div {
+  display: flex;
+  text-align: center;
+  width: 110px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+#back-text {
+  align-items: center;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+#friends-profile {
+  display: flexbox;
+  padding-top: 35px;
+}
+
+#friends-profile-img {
+  border-radius: 50%;
+  width: 166px;
+  height: 166px;
+}
+
+#friends-profile-text {
+  text-align: center;
+}
+
+#challenge-achievement {
+  background-color: #e6e6e6;
+  margin: auto;
+  width: 50%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+}
+
+#challenge-img {
+  border-radius: 50%;
+  width: 50px;
+  padding-left: 15px;
+  padding-right: 18px;
+}
+
+/*-------Challenges ---------*/
+
+#achievement-img-box {
+  display: flex;
+  flex-direction: row;
+  padding-top: 21px;
+}
+
+#achievement-img-circle {
+  width: 82px;
+  height: 81px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #c2c2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#achievement-img {
+  width: 48px;
+  height: 48px;
+}
+
+/* ------- Achievements page --------*/
+
+#achievement-page-box {
+  display: flex;
+  align-items: row;
+  background-color: #e6e6e6;
+  margin: auto;
+  width: 70%;
+  height: 166px;
+  padding: 10px;
+  border-radius: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-top: 22px;
+}
+
+#achievement-circle {
+  background-color: #c2c2c2;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 28px;
+}
+
+#achievement-page-text {
+  font-weight: bold;
+  padding-left: 26px;
+}
